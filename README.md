@@ -6,9 +6,9 @@ In this version I will build my own MVC and CMS system for my porftolio. I haven
 http://tynoschrama.epizy.com/Home/
 
 Must:
-futur proof
+-futur proof
 
 
 Extra:
-way to add plugins
-option for real time
+-way to add plugins
+-option for real time
