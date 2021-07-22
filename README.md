@@ -7,7 +7,7 @@ http://tynoschrama.epizy.com/Home/
 
 Must:
 -futur proof
--
+
 
 Extra:
 -way to add plugins
