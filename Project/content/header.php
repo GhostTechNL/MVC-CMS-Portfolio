@@ -1,7 +1,5 @@
-<head>
-	<title></title>
-	<meta charset="utf-8">
-</head>
-<body>
+<div class="header">
+	<h3>header</h3>
+</div>
 
 
