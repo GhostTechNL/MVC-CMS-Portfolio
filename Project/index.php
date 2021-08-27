@@ -5,9 +5,9 @@ include 'config.php';
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title><?php echo controller::getTitle($_GET['page'], "name's Portfolio"); ?></title>
 	<meta charset="utf-8">
-	<? controller::getMeta(); ?>
+	<?php controller::getMeta(); ?>
 </head>
 <body>
 <?php

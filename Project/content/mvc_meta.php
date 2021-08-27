@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="content/assets/css/style.css">
 <!-- Default meta -->
 <meta charset="utf-8">
 <meta name="author" content="">
