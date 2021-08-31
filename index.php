@@ -5,7 +5,7 @@ include 'config.php';
 <!DOCTYPE html>
 <html>
 <head>
-	<title><?php echo controller::getTitle($_GET['page'], "name's Portfolio"); ?></title>
+	<title><?php echo controller::getTitle(controller::getURLValue(2), "Name's Portfolio"); ?></title>
 	<meta charset="utf-8">
 	<?php controller::getMeta(); ?>
 </head>
@@ -13,7 +13,7 @@ include 'config.php';
 <?php
 controller::getHeader();
 
-controller::getPage($_GET['page'],true);
+controller::getPage(controller::getURLValue(2),false);
 
 controller::getFooter();
 ?>
