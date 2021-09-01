@@ -7,6 +7,7 @@ class controller
 {
 	protected static $path = "";
     protected static $maintenancemode = false;
+    protected static $wwwpath = "";
     //
     public static function setpath($pathname){
         self::$path = $pathname;
@@ -43,7 +44,11 @@ class controller
                 }
                 require $pagedir;
             }elseif(empty($pagename) && $goDefault === true){
-                header("Location: Home");
+                if (self::$wwwpath !== "") {
+                    header("Location: " . self::$wwwpath . "Home/");
+                    die();
+                }
+                //header("Location: "."https://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'] . "Home/");
             }else{
                 require self::$path . "/content/404.php";
             }
@@ -51,10 +56,10 @@ class controller
             $dirMaintenace = self::$path . "/content/maintenance.php";
             if (file_exists($dirMaintenace)) {
                 require $dirMaintenace;
-            } 
+            }
         }
     }
-    public function pathbackCSS(){
+    public function filePushBack(){
         $backdircount = count(controller::getURLValue()) -3;
         $backcsspath = "";
         for ($i=0; $i <= $backdircount; $i++) { 
@@ -72,6 +77,9 @@ class controller
         }else{
             return $url;
         }
+    }
+    public function setWWW($link = ""){
+        self::$wwwpath = $link;
     }
     public function maintenancemode(){
         $login = $_SESSION['userid'];

@@ -10,6 +10,8 @@ Functions::getConnectionToDatabase($db['server'],$db['user'],$db['password'],$db
 
 controller::setpath(__DIR__);
 
+controller::setWWW("https://localhost/MVC-CMS-Portfolio/");
+
 //controller::maintenancemode();
 
 ?>

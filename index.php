@@ -13,7 +13,7 @@ include 'config.php';
 <?php
 controller::getHeader();
 
-controller::getPage(controller::getURLValue(2),false);
+controller::getPage(controller::getURLValue(2),true);
 
 controller::getFooter();
 ?>

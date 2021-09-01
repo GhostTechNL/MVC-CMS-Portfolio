@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="<?php echo controller::pathbackCSS(); ?>content/assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="<?php echo controller::filePushBack(); ?>content/assets/css/style.css">
 <!-- Default meta -->
 <meta charset="utf-8">
 <meta name="author" content="">
