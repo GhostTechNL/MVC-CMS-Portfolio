@@ -10,11 +10,14 @@ include 'config.php';
 	<?php controller::getMeta(); ?>
 </head>
 <body>
+	<div class="side-menu">
+		<?php
+		controller::getHeader();
+
+		controller::getPage(controller::getURLValue(2),true);
+		?>
+	</div>
 <?php
-controller::getHeader();
-
-controller::getPage(controller::getURLValue(2),true);
-
 controller::getFooter();
 ?>
 </body>

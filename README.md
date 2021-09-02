@@ -12,3 +12,4 @@ Must:
 Extra:
 -way to add plugins.
 -option for real time.
+-maintenance ux push of a button reader then uncomment maintenancemode in the config.php

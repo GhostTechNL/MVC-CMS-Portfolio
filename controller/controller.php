@@ -59,14 +59,6 @@ class controller
             }
         }
     }
-    public function filePushBack(){
-        $backdircount = count(controller::getURLValue()) -3;
-        $backcsspath = "";
-        for ($i=0; $i <= $backdircount; $i++) { 
-            $backcsspath .= "../";
-        }
-        return $backcsspath;
-    }
     public function getURLValue($index = ""){
         $url = explode("/", $_SERVER['REQUEST_URI']);
         unset($url[0]);
@@ -78,14 +70,17 @@ class controller
             return $url;
         }
     }
-    public function setWWW($link = ""){
-        self::$wwwpath = $link;
+    public function Weblink($link = ""){
+        if (!empty($link)) {
+            self::$wwwpath = $link;
+        }
+        return self::$wwwpath;
     }
     public function maintenancemode(){
-        $login = $_SESSION['userid'];
-        if (empty($login)) {
+        if (!isset($_SESSION['userid'])) {
             self::$maintenancemode = true;
         }
+        return true;
     }
 }
 

@@ -1,6 +1,76 @@
 /* 
 Made by: ;
+Custom made css style sheet for my portfolio
 */
 body{
+	padding: 0;
+	margin: 0;
 	font-family: sans-serif;
+}
+.side-menu{
+	width: 100%;
+	min-height: 1080px;
+	display: flex;
+	flex-direction: row;
+}
+.header{
+	position: relative;
+	width: 20%;
+	height: auto;
+	background: green;
+	transition: width 1s;
+}
+.content{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background: blue;
+}
+.footer{
+	position: relative;
+	width: 100%;
+	min-height: 100px;
+	height: auto;
+	display: flex;
+	background: red;
+}
+.maintenance{
+	width: 100%;
+	text-align: center; 
+	margin-top: 300px;
+}
+.Welcome{
+	width: 100%;
+	height: 1080px;
+}
+#btn{
+	position: relative;
+	z-index: 1;
+}
+/* Multi-use classes */
+.flex-col{
+	flex-direction: column;
+}
+.row{
+	display: flex;
+	flex-direction: row;
+}
+.col-3,.col-4{
+	display: block;
+	height: auto;
+}
+.col-3{
+	width: 40%;
+}
+.col-4{
+	width: 33%;
+}
+.container{
+	width: 980px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.pt-4{
+	padding-top: 1.5rem;
 }
