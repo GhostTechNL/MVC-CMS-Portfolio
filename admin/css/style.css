@@ -1,0 +1,148 @@
+/* this is the second css */
+
+
+/* ---- Pages ----*/
+.login-container{
+	display: table;
+	margin: 100px auto;
+}
+.login-container img, .login-container h2{
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.login-container h2{
+	color: white;
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+.login-inform{
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+}
+.login form{
+	display: block;
+	background-color: #576574;
+	padding: 10px;
+	width: 400px;
+	min-height: 300px;
+}
+.login form input{
+	background-color: #576574;
+	display: block;
+	margin-bottom: 20px;
+	color: white;
+}
+.login form input::placeholder{
+	color: lightgrey;
+}
+.login form input[type="text"], .login form input[type="password"]{
+	width: 300px;
+	font-size: 18px;
+	padding: 2px 5px;
+	border: 2px solid #1dd1a1;
+}
+.login form input[type="text"]:focus, .login form input[type="password"]:focus{
+	border-color: #10ac84;
+}
+.login form input[type="submit"]{
+	font-size: 18px;
+	padding: 2px 10px;
+	border: 2px solid #feca57;
+	color: #feca57;
+	margin: 0 auto;
+}
+.login form input[type="submit"]:hover{
+	border-color: #ff6b6b;
+	color: #ff6b6b;
+	cursor: pointer;
+}
+.login .login-member{
+	color: white;
+}
+.login .login-member input{
+	margin-right: 5px;
+	display: inline-block;
+}
+.error, .note{
+	color: #ee5253;
+	margin-top: -18px;
+	margin-bottom: 5px;
+	padding: 3px;
+	border: 2px solid #ee5253;
+	font-weight: bold;
+}
+.note{
+	color: #1dd1a1;
+	border: 2px solid #1dd1a1;
+}
+.projecten-ad .note, .projecten-ad .error{
+	width: fit-content;
+	margin-top: 5px;
+}
+.projecten-ad form label, .projecten-ad form input{
+	margin-top: 4px;
+	margin-bottom: 8px;
+	display: block;
+}
+.projecten-ad form input[type="text"], .projecten-ad form textarea{
+	width: 250px;
+	padding: 5px;
+	color: black;
+}
+.projecten-ad form input[type="submit"]{
+	padding: 5px;
+}
+.projecten-ad form textarea{
+	height: 400px;
+}
+.projecten-ad .project-ad-list{
+	display: block;
+	margin-top: 5px;
+}
+.projecten-ad .project-ad-list table{
+	width: 100%;
+	height: auto;
+}
+.projecten-ad .project-ad-list table .main{
+	width: 40%;
+}
+.projecten-ad .project-ad-list table thead th{
+	background-color: #8395a7;
+	padding:  15px 20px;
+	text-align: left;
+}
+.projecten-ad .project-ad-list table tbody td{
+	padding: 5px 20px;
+}
+.projecten-ad .project-ad-list table tbody tr{
+	background-color: #c8d6e5;
+	border-bottom: 4px solid #576574;
+	color: black;
+}
+.projecten-ad .project-ad-list .delete-btn a{
+	text-align: center;
+	border: 2px solid grey;
+}
+.projecten-ad .project-ad-list a{
+	display: block;
+	padding: 10px 0;
+	color: black;
+	font-size: 18px;
+	font-weight: bold;
+}
+.projecten-ad .project-ad-list a:hover{
+	color: #1dd1a1;
+}
+/* ---- Multi ----*/
+.upload-btn{
+	cursor: pointer;
+}
+.default-btn{
+	display: inline-block;
+	background-color: white;
+	color: black;
+	padding: 5px;
+}

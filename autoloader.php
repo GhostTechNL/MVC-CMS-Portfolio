@@ -5,6 +5,8 @@ spl_autoload_register(function($class){
 		include __DIR__ . '/controller/' . $class . '.php';
 	}elseif (file_exists(__DIR__ . '/classes/' . $class . '.php')) {
 		include __DIR__ . '/classes/' . $class . '.php';
+	}elseif (file_exists(__DIR__ . '/classes/PHPMailer/' . $class . '.php')) {
+		include __DIR__ . '/classes/PHPMailer/' . $class . '.php';
 	}
 });
 ?>

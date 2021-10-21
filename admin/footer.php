@@ -1,0 +1,1 @@
+<script type="text/javascript" src="<?php echo controller::Weblink(); ?>content/assets/js/mainscript.js"></script>

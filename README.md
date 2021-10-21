@@ -7,6 +7,7 @@ http://tynoschrama.epizy.com/Home/
 
 Must:
 -futur proof.
+-maintenable
 
 
 Extra:

@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$db['database'] = "portfolio";
+$db['database'] = "portfoliodb";
 $db['user'] = "root";
 $db['password'] = "";
 $db['server'] = "localhost";
